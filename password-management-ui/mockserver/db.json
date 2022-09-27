@@ -1,0 +1,19 @@
+{
+  "greettings": [
+    {"uid": "BO", "country": "Bolivia", "greetting": "Hola"},
+    {"uid": "BR", "country": "Brazil", "greetting": "Olá"},
+    {"uid": "BS", "country": "Bahamas", "greetting": "Hello"},
+    {"uid": "BT", "country": "Bhutan", "greetting": "Kuzu zangpo"},
+    {"uid": "BV", "country": "Bouvet Island", "greetting": "Hello"},
+    {"uid": "BW", "country": "Botswana", "greetting": "Dumela"},
+    {"uid": "BY", "country": "Belarus", "greetting": "Вітаю"},
+    {"uid": "MX", "country": "Mexico", "greetting": "Hola"},
+    {"uid": "AR", "country": "Argentina", "greetting": "Hola"}
+  ],
+  "users": [
+    {"uid": 1, "username": "super", "password": "1234", "firstNames": "User", "lastNames": "One", "email": "one@user.com"},
+    {"uid": 2, "username": "admin", "password": "1234", "firstNames": "User", "lastNames": "Two", "email": "two@user.com"},
+    {"uid": 3, "username": "guest", "password": "1234", "firstNames": "User", "lastNames": "Three", "email": "three@user.com"},
+    {"uid": 4, "username": "other", "password": "1234", "firstNames": "User", "lastNames": "Four", "email": "four@user.com"}
+  ]
+}
