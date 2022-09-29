@@ -1,18 +1,17 @@
 import { Injectable } from '@nestjs/common';
 import { CreatePasswordCardDto } from './dto/create-password-card.dto';
 import { UpdatePasswordCardDto } from './dto/update-password-card.dto';
+import { readFileSync, writeFileSync } from 'fs';
 
-const fs = require('fs')
-const DATA_PATH = '/home/martin/Workspace/personal-projects/password-management/password-management-server/resources/data.json';
-
+const DATA_PATH = 'resources/data.json';
 const getPasswordCardData = () => {
-  const data = fs.readFileSync(DATA_PATH, 'utf8');
+  const data = readFileSync(DATA_PATH, 'utf8');
   return JSON.parse(data);
 };
 
 const savePasswordCardData = (data) => {
   const stringifyData = JSON.stringify(data);
-  fs.writeFileSync(DATA_PATH, stringifyData);
+  writeFileSync(DATA_PATH, stringifyData);
 };
 
 @Injectable()
